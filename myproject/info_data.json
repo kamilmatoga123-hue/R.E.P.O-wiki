@@ -1,0 +1,821 @@
+[
+{
+  "model": "Info.item",
+  "pk": 1,
+  "fields": {
+    "name": "Strength Upgrade",
+    "item_type": "tool",
+    "value": "$5K - $8K  Wzrasta liniowo (w obiegu mogą znajdować się maksymalnie 2 sztuki naraz).",
+    "effect": "Zwiększa twoją siłę o [25%].",
+    "image_path": "Strength_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 2,
+  "fields": {
+    "name": "Range Upgrade",
+    "item_type": "tool",
+    "value": "$5K - $8K Wzrasta liniowo (w obiegu mogą znajdować się maksymalnie 3 sztuki na raz).",
+    "effect": "Zwiększa zasięg podnoszenia o [30%].",
+    "image_path": "Range_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 3,
+  "fields": {
+    "name": "Stamina Upgrade",
+    "item_type": "tool",
+    "value": "$2K - $4K Wzrasta liniowo (w obiegu mogą znajdować się maksymalnie 4 sztuki na raz).",
+    "effect": "Zwiększa maksymalną wytrzymałość o [10].",
+    "image_path": "Stamina_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 4,
+  "fields": {
+    "name": "Sprint Speed Upgrade",
+    "item_type": "tool",
+    "value": "$5K - $8K Wzrasta liniowo (w obiegu mogą znajdować się maksymalnie 3 sztuki na raz).",
+    "effect": "Zwiększa prędkość sprintu o [20%].",
+    "image_path": "Sprint_Speed_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 5,
+  "fields": {
+    "name": "Crouch Rest Upgrade",
+    "item_type": "tool",
+    "value": "6 tys.–8 tys. dolarów Czy rośnie liniowo? (W obiegu mogą znajdować się maksymalnie 3 sztuki naraz.)",
+    "effect": "Zwiększa szybkość regeneracji wytrzymałości podczas korzystania z funkcji kucania i odpoczynku o [1 na sekundę] ([0,5 na sekundę] podczas ruchu).",
+    "image_path": "Crouch_Rest_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 6,
+  "fields": {
+    "name": "Health Upgrade",
+    "item_type": "tool",
+    "value": "4 tys.–5 tys. dolarów Wzrasta liniowo (w obiegu mogą znajdować się maksymalnie 2 sztuki naraz).",
+    "effect": "Zwiększa maksymalne zdrowie o [20].",
+    "image_path": "Upgrade_Health_Albedo.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 7,
+  "fields": {
+    "name": "Map Player Count Upgrade",
+    "item_type": "tool",
+    "value": "8 tys.–12 tys. dolarów (Maksymalnie 1 sztuka może być w obiegu na raz. Po zakupie/użyciu nie może pojawić się ponownie przez cały czas trwania zapisu.)",
+    "effect": "Displays how many players are currently alive on the map.",
+    "image_path": "Player_Count_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 8,
+  "fields": {
+    "name": "Tumble Launch Upgrade",
+    "item_type": "tool",
+    "value": "4 tys.–5 tys. dolarów Wzrasta liniowo (w obiegu może znajdować się maksymalnie 1 sztuka na raz).",
+    "effect": "Zwiększa odległość i prędkość wyskoku.",
+    "image_path": "Tumble_Launch_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 9,
+  "fields": {
+    "name": "Tumble Wings Upgrade",
+    "item_type": "tool",
+    "value": "9 tys.–12 tys. dolarów Czy rośnie liniowo? (W obiegu może być maksymalnie 1 sztuka na raz.)",
+    "effect": "Pozwala graczowi szybować podczas koziołkowania. Może również aktywować się automatycznie podczas spadania.\r\n\r\nKażde kolejne użycie pozwala graczowi szybować dalej.",
+    "image_path": "Tumble_Wings_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 10,
+  "fields": {
+    "name": "Extra Jump Upgrade",
+    "item_type": "tool",
+    "value": "9 tys.–12 tys. USD Wzrasta liniowo (w obiegu może znajdować się maksymalnie 1 sztuka na raz).",
+    "effect": "Zwiększa maksymalną ilość skoków w powietrzu.",
+    "image_path": "Extra_Jump_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 11,
+  "fields": {
+    "name": "Death Head Battery Upgrade",
+    "item_type": "tool",
+    "value": "6 tys.–8 tys. USD Wzrasta liniowo (w obiegu może znajdować się maksymalnie 1 sztuka na raz).",
+    "effect": "Zwiększa czas, w którym możesz opętać i rozmawiać ze swoją martwą głową, ale nie wydłuża czasu ładowania.",
+    "image_path": "Death_Head_Battery_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 12,
+  "fields": {
+    "name": "Tumble Climb Upgrade",
+    "item_type": "tool",
+    "value": "$9K - $10K Increases linearly (Max of 1 can be in circulation at a time.)",
+    "effect": "Lets players be able to climb walls and catch self using plasmatic rope.\r\nEach after the first, reduces the stamina consumption and increases range and strength of your climb.",
+    "image_path": "Tumble_Climb_Upgrade.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 13,
+  "fields": {
+    "name": "Small Health Pack",
+    "item_type": "tool",
+    "value": "$3K - $6K",
+    "effect": "Dodaje 25 HP",
+    "image_path": "HealthSmall.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 14,
+  "fields": {
+    "name": "Medium Health Pack",
+    "item_type": "tool",
+    "value": "$5K - $11K",
+    "effect": "Dodaje 50 HP",
+    "image_path": "HealthMedium.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 15,
+  "fields": {
+    "name": "Large Health Pack",
+    "item_type": "tool",
+    "value": "$9K - $16K",
+    "effect": "Dodaje 100 HP",
+    "image_path": "HealthLarge.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 16,
+  "fields": {
+    "name": "Baseball Bat",
+    "item_type": "tool",
+    "value": "$25K - $45K",
+    "effect": "Has 10 hits until it needs to be recharged.\r\nCauses a brief stun and immense knock-back. Due to the immense knock-back force, most enemies will take [25] damage on-hit. You can almost guarantee [25-50] damage with a down-angled swing.",
+    "image_path": "Bolt_zap.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 17,
+  "fields": {
+    "name": "Frying Pan",
+    "item_type": "tool",
+    "value": "$15K - $18K",
+    "effect": "Has 15 hits before needing to recharge. Deals damage to players and monsters, Can knock down small enemies and players.",
+    "image_path": "MeeleFryingPan.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 18,
+  "fields": {
+    "name": "Sledge Hammer",
+    "item_type": "tool",
+    "value": "$29K - $47K",
+    "effect": "Has 10 hits before needing to recharge. heavy weapon, strength does not seem to make it easier to swing (needs more testing).\r\nAn alternative usage for the Sledge Hammer is to push large and/or stunned enemies off ledges.v",
+    "image_path": "MeleeSledgeHammer.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 19,
+  "fields": {
+    "name": "Sword",
+    "item_type": "tool",
+    "value": "$18K - $20K",
+    "effect": "Has 15 hits before needing to recharge. Fast to swing weapon that deals damage. Does not stun any enemy",
+    "image_path": "MeleeSword.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 20,
+  "fields": {
+    "name": "Inflatable Hammer",
+    "item_type": "tool",
+    "value": "$8K - $18K",
+    "effect": "Has 20 hits before needing to recharge. has a ~5% chance to cause an explosion, dealing 250 points of damage.",
+    "image_path": "MeleeInflatableHammer.webp"
+  }
+},
+{
+  "model": "Info.item",
+  "pk": 21,
+  "fields": {
+    "name": "Prodzap",
+    "item_type": "tool",
+    "value": "$24K - $30K",
+    "effect": "A sci-fi melee weapon that acts as a stun baton. On impact, it deals 8 damage and stuns for 3 seconds.\r\nHas 16 hits before needing a recharge.",
+    "image_path": "Bolt_zap.webp"
+  }
+},
+{
+  "model": "Info.location",
+  "pk": 1,
+  "fields": {
+    "name": "Swiftbroom Academy",
+    "description": "Akademia Szybkiej Miotły to jedna z 4 standardowych lokacji, które możesz napotkać. Zawiera zestaw kafelków przypominający Akademię Magii z miksturami, kapeluszami, kotłami, łóżkami, regałami na książki, stolikami nocnymi, beczkami, skrzyniami, wieszakami na ubrania itp. jako dekoracjami.",
+    "location_type": "Normalna lokacja",
+    "image_path": "SBA.png"
+  }
+},
+{
+  "model": "Info.location",
+  "pk": 2,
+  "fields": {
+    "name": "Headman Manor",
+    "description": "Dwór Headmanów to jedna z 4 lokacji, które możesz odwiedzić.\r\nZawiera zestaw kafelków dworu/dworu z unikalnymi dekoracjami dla danego poziomu, w tym świecami, telewizorami pudełkowymi, obrazami, zegarami i rurami.",
+    "location_type": "Normalna lokacja",
+    "image_path": "HMM.jpg"
+  }
+},
+{
+  "model": "Info.location",
+  "pk": 3,
+  "fields": {
+    "name": "McJannek Station",
+    "description": "Stacja McJannek to arktyczne laboratorium. Można tu znaleźć wiele obiektów naukowych, takich jak komputery, probówki, mikroskopy itp. Na zewnątrz pada śnieg, a niektóre okna są wybite. Co więcej, laboratorium znajduje się wysoko w górach.",
+    "location_type": "Normalna lokacja",
+    "image_path": "MJS.jpg"
+  }
+},
+{
+  "model": "Info.location",
+  "pk": 4,
+  "fields": {
+    "name": "Museum of Human Art",
+    "description": "Muzeum Sztuki Ludzkiej, pierwotnie nazywane „Awangardą”, to lokacja w grze głównej i jedna z czterech lokacji, które można spotkać w R.E.P.O.\r\nZnajduje się w niej zestaw kafelków przypominający muzeum, z rozbitymi posągami, gigantycznymi produktami spożywczymi i innymi artefaktami jako dekoracjami.",
+    "location_type": "Normalna lokacja",
+    "image_path": "MOHA.jpg"
+  }
+},
+{
+  "model": "Info.location",
+  "pk": 5,
+  "fields": {
+    "name": "Disposal Arena",
+    "description": "Disposal Arena to ostatnia lokacja, do której dotrą gracze. Jest to miejsce, w którym gracze kończą grę.\r\nOdradzasz się w miejscu przypominającym punkt ewakuacyjny z telefonem w ciężarówce. Poborca ​​podatkowy upokarza cię emotikonami, a następnie zrzuca cię na Disposal Arena w stanie Tumble i odtwarza dramatyczną ścieżkę dźwiękową.",
+    "location_type": "Dostępne po śmierci wszystkich",
+    "image_path": "DA.jpg"
+  }
+},
+{
+  "model": "Info.location",
+  "pk": 6,
+  "fields": {
+    "name": "Service Station",
+    "description": "Na Stacji Obsługi znajduje się wiele losowych przedmiotów, w tym broń, apteczki i ulepszenia, które można kupić za pieniądze zdobyte podczas misji. W tej lokacji nie ma potworów. Gracze mogą swobodnie testować wszystkie przedmioty dostępne na Stacji, ponieważ mają tu nieskończoną amunicję.",
+    "location_type": "Dostępna po pomyślnym ukończeniu Normalnej Lokacji",
+    "image_path": "SS.jpg"
+  }
+},
+{
+  "model": "Info.gamelore",
+  "pk": 1,
+  "fields": {
+    "title": "R.E.P.O",
+    "content": "Fabuła R.E.P.O. nie jest obecnie jasno określona, ​​jednak dysponujemy różnymi szczegółami, wskazówkami i podpowiedziami dotyczącymi tego, co mogło się wydarzyć tak dawno temu i dlaczego tu jesteśmy. Szczegóły mogą ulec weryfikacji, zmianie i aktualizacji w miarę jak coraz więcej osób będzie się wypowiadać, perspektywy się zmienią, a informacje będą publikowane."
+  }
+},
+{
+  "model": "Info.gamelore",
+  "pk": 2,
+  "fields": {
+    "title": "The Taxman",
+    "content": "Poborca ​​Podatkowy jest nadzorcą Semibotów i najprawdopodobniej cyfrowym umysłem, sztuczną inteligencją lub jakąś istotą, której celem jest pobieranie podatków. W grze używa emotikon jako głównego środka komunikacji, a jego głównym i preferowanym wyglądem jest cielesna, przerażająca wersja płaczącej i śmiejącej się emotikony. Chociaż niewiele wiadomo o Poborcy Podatkowym i jego pochodzeniu, istnieje kilka teorii:\r\n\r\nCel Poborcy Podatkowego\r\nPowszechną i powszechnie akceptowaną teorią jest to, że celem Poborcy Podatkowego jest pobieranie podatków. W rzeczywistości, gdy podatki nie są płacone, majątek zostaje przejęty, a ten cel jest niezwykle podobny do tego, który realizujemy w grze. To prowadzi do wniosku, że z powodu odległej (lub bardzo rzadkiej) nieobecności ludzi, nie ma nikogo, kto płaciłby te podatki. To prowadzi Poborcę Podatkowego do ciągłych prób przejmowania rzeczy, aby spłacić swój dług, niezależnie od obecności danej osoby. Dowodem na to jest fakt, że znajdujemy wartościowe przedmioty na Arenie Likwidacji. Gdyby Taxman rzeczywiście dążył do zarabiania pieniędzy wyłącznie dla zysku, dlaczego miałby pozbywać się cennych przedmiotów? Najbardziej prawdopodobną odpowiedzią jest to, że poza wypełnianiem kwot podatkowych, nie ma on dla nich żadnego zastosowania i pozbywa się ich."
+  }
+},
+{
+  "model": "Info.gamelore",
+  "pk": 3,
+  "fields": {
+    "title": "The Semibots",
+    "content": "Semiboty to roboty, którymi wcielasz się w rolę robotnika, służącego celom poborcy podatkowego. W trakcie gry widzimy, jak ludzie mieli mieszane uczucia wobec Semibotów – niektórzy postrzegali je jako złoczyńców lub nikczemników, a inni dostrzegali w nich życie, o czym świadczą liczne graffiti i dzieła sztuki w Muzeum Sztuki Ludzkiej. Wiemy na pewno, że Grupa Ludzi aktywnie nienawidziła Semibotów i polowała na nie, a na ich terenie znajdowały się strzelnice, pułapki i klatki z martwymi Semibotami należącymi do nich. Chociaż wiemy sporo o Semibotach, ich pochodzenie jest niejasne, ale pojawiło się kilka teorii:\r\n\r\nCzyszczące roboty z nowym przeznaczeniem\r\nSemiboty są stosunkowo nieszkodliwe pod względem funkcji i wyglądu. Nie powstrzymuje ich to przed używaniem broni lub przedmiotów w śmiercionośny sposób, ale można by pomyśleć, że robot stworzony do walki i rekwizycji miałby wbudowaną latarkę i mapę. Jednak powszechna teoria sugeruje, że Semiboty były kiedyś droidami czyszczącymi lub serwisowymi, używanymi do prac domowych, konserwacji i dozoru. Takie rzeczy jak przyjazny design z wyrazem twarzy i głosem, wielofunkcyjne belki ciągnące do narzędzi i delikatnych przedmiotów, a nawet ich niewielkie rozmiary w trybie obracania wskazują na to i choć obecnie najprawdopodobniej nie jest to uważane za kanon, pierwotne założenie, że R.E.P.O. to sprzątanie domu, może na to wskazywać."
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 1,
+  "fields": {
+    "name": "Apex Predator",
+    "health": 150,
+    "damage": "10 per hit",
+    "danger": 1,
+    "image_path": "Apex_Predator_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 2,
+  "fields": {
+    "name": "Bella",
+    "health": 200,
+    "damage": 5,
+    "danger": 1,
+    "image_path": "Bella_monster.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 3,
+  "fields": {
+    "name": "Birthday Boy",
+    "health": 150,
+    "damage": 10,
+    "danger": 1,
+    "image_path": "Birthday_Boy_monster.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 4,
+  "fields": {
+    "name": "Elsa",
+    "health": 600,
+    "damage": "30(5 + 25) per hit",
+    "danger": 1,
+    "image_path": "Elsa_monster.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 5,
+  "fields": {
+    "name": "Gnome",
+    "health": 20,
+    "damage": 10,
+    "danger": 1,
+    "image_path": "Gnome_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 6,
+  "fields": {
+    "name": "Peeper",
+    "health": 30,
+    "damage": "2 per second",
+    "danger": 1,
+    "image_path": "Peeper_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 7,
+  "fields": {
+    "name": "Shadow Child",
+    "health": 150,
+    "damage": 50,
+    "danger": 1,
+    "image_path": "Shadow_Child_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 8,
+  "fields": {
+    "name": "Spewer",
+    "health": 65,
+    "damage": 10,
+    "danger": 1,
+    "image_path": "Spewer_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 9,
+  "fields": {
+    "name": "Tick",
+    "health": "10 if drained (20 - 100)",
+    "damage": 10,
+    "danger": 1,
+    "image_path": "Spewer_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 11,
+  "fields": {
+    "name": "Animal",
+    "health": 150,
+    "damage": "2 per hit",
+    "danger": 2,
+    "image_path": "Animal_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 12,
+  "fields": {
+    "name": "Banger",
+    "health": 50,
+    "damage": "varies",
+    "danger": 2,
+    "image_path": "Banger_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 13,
+  "fields": {
+    "name": "Bowtie",
+    "health": 200,
+    "damage": 5,
+    "danger": 2,
+    "image_path": "Bowtie_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 14,
+  "fields": {
+    "name": "Chef",
+    "health": 150,
+    "damage": 10,
+    "danger": 2,
+    "image_path": "Chef_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 15,
+  "fields": {
+    "name": "Gambit",
+    "health": 150,
+    "damage": "red wheel space: 50, black wheel space: sets hp to 1, Interruption 60",
+    "danger": 2,
+    "image_path": "Gambit_monster.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 16,
+  "fields": {
+    "name": "Headgrab",
+    "health": 150,
+    "damage": "normal: 5, dropkick 15",
+    "danger": 2,
+    "image_path": "Headgrab_monster.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 17,
+  "fields": {
+    "name": "Heart Hugger",
+    "health": 300,
+    "damage": 30,
+    "danger": 2,
+    "image_path": "Heart_Hugger_monster.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 18,
+  "fields": {
+    "name": "Hidden",
+    "health": 100,
+    "damage": "none",
+    "danger": 2,
+    "image_path": "Hidden_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 19,
+  "fields": {
+    "name": "Mentalist",
+    "health": 150,
+    "damage": 50,
+    "danger": 2,
+    "image_path": "Mentalist_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 20,
+  "fields": {
+    "name": "Oogly",
+    "health": 200,
+    "damage": 4,
+    "danger": 2,
+    "image_path": "Oogly_monster.png"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 21,
+  "fields": {
+    "name": "Rugrat",
+    "health": 150,
+    "damage": "19-225(depends on valuable picked up)",
+    "danger": 2,
+    "image_path": "Rugrat_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 22,
+  "fields": {
+    "name": "Upscream",
+    "health": 50,
+    "damage": 10,
+    "danger": 2,
+    "image_path": "Upscream_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 23,
+  "fields": {
+    "name": "Cleanup Crew",
+    "health": 350,
+    "damage": "Head explosion: 85, melee: 60, radiation: 15(per second)",
+    "danger": 3,
+    "image_path": "Cleanup_Crew_monster.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 24,
+  "fields": {
+    "name": "Clown",
+    "health": 250,
+    "damage": "Ranged: 100 (30 + 70) Melee: 60 (10 + 50)",
+    "danger": 3,
+    "image_path": "Clown_beamer.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 25,
+  "fields": {
+    "name": "Headman",
+    "health": 250,
+    "damage": 50,
+    "danger": 3,
+    "image_path": "Headman_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 26,
+  "fields": {
+    "name": "Huntsman",
+    "health": 250,
+    "damage": 100,
+    "danger": 3,
+    "image_path": "Huntsman_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 27,
+  "fields": {
+    "name": "Loom",
+    "health": 500,
+    "damage": "Clap: 100 Shockwave: 25 (Physics)",
+    "danger": 3,
+    "image_path": "Loom_monster.png"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 28,
+  "fields": {
+    "name": "Reaper",
+    "health": 250,
+    "damage": "10 (Per hit)",
+    "danger": 0,
+    "image_path": "Reaper_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 29,
+  "fields": {
+    "name": "Robe",
+    "health": 250,
+    "damage": "Normal: 100 Crouched: 50",
+    "danger": 3,
+    "image_path": "Robe_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.monster",
+  "pk": 30,
+  "fields": {
+    "name": "Trudge",
+    "health": 500,
+    "damage": "Slam: 100 Explosion: 100 (20 + 80)  Crouched: 35 (Per hit)",
+    "danger": 3,
+    "image_path": "Trudge_Transparent.jpg"
+  }
+},
+{
+  "model": "Info.player",
+  "pk": 1,
+  "fields": {
+    "name": "Semibot",
+    "description": "A Semibot appears as a small, weathered robot with a semi-circular head and two large, cartoonish eyes with tiny black pupils. The head is split into two, with the top part hinged at the back, and it will move and bounce up and down when the player speaks into their microphone. Its body is divided into three stacked segments: head, torso, and pelvic area, each slightly wider than the one above. These segments can collapse telescopically, allowing the Semibot to crouch, crawl, or compact itself when tumbling.\r\n\r\nIts arms and legs extend as long, cone-like shapes that swivel from fixed points on the body. In normal movement they appear stable, but in tumble mode they flail loosely as the Semibot is jostled around. When crouching or crawling, the limbs contract and shorten, keeping the body proportionate to its compacted frame. The right hand splits into three prongs when holding an object, projecting an orange, glowing tractor beam that connects to the item and flexes as it shifts. The left hand remains solid, with a flashlight mounted to the right side of the arm; the map is attached in the same fashion.",
+    "image_path": "Semibot_Full.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 1,
+  "fields": {
+    "name": "Bracelet",
+    "size": "Small",
+    "value": "500 - 600$",
+    "place": "Headman Manor",
+    "image_path": "Bracelet.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 2,
+  "fields": {
+    "name": "Goblet",
+    "size": "tiny",
+    "value": "500 - 600$",
+    "place": "Headman Manor",
+    "image_path": "Goblet.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 3,
+  "fields": {
+    "name": "Ocarina",
+    "size": "tiny",
+    "value": "500 - 600$",
+    "place": "Headman Manor",
+    "image_path": "Ocarina.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 4,
+  "fields": {
+    "name": "Pocket Watch",
+    "size": "tiny",
+    "value": "500 - 600$",
+    "place": "Headman Manor",
+    "image_path": "Pocket_Watch.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 5,
+  "fields": {
+    "name": "Uranium Mug",
+    "size": "tiny",
+    "value": "1200 - 2000$",
+    "place": "Headman Manor",
+    "image_path": "Uranium_Mug.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 6,
+  "fields": {
+    "name": "Small Enemy Valuable",
+    "size": "Small",
+    "value": "2000 - 3000$",
+    "place": "Any",
+    "image_path": "SmallEnemyValuableWiki.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 7,
+  "fields": {
+    "name": "Small Surplus Valuable",
+    "size": "Small",
+    "value": "1 - 5000$",
+    "place": "Any",
+    "image_path": "Small_Surplus.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 8,
+  "fields": {
+    "name": "Doll",
+    "size": "Small",
+    "value": "500 - 600$",
+    "place": "Headman Manor",
+    "image_path": "Doll.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 9,
+  "fields": {
+    "name": "Frog",
+    "size": "Small",
+    "value": "1200 - 2000$",
+    "place": "Headman Manor",
+    "image_path": "Frog.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 10,
+  "fields": {
+    "name": "Globe",
+    "size": "Small",
+    "value": "1200 - 2000$",
+    "place": "Headman Manor",
+    "image_path": "Globe.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 11,
+  "fields": {
+    "name": "Medium Enemy Valuable",
+    "size": "Medium",
+    "value": "$3500-$4500",
+    "place": "Any",
+    "image_path": "MediumEnemyValuableWiki.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 12,
+  "fields": {
+    "name": "Medium Surplus Valuable",
+    "size": "Medium",
+    "value": "$5001-$10000",
+    "place": "Any",
+    "image_path": "Medium_Surplus_Valuable.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 13,
+  "fields": {
+    "name": "Bottle",
+    "size": "Medium",
+    "value": "2000 - 3000$",
+    "place": "Headman Manor",
+    "image_path": "Bottle.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 14,
+  "fields": {
+    "name": "Big Enemy Valuable",
+    "size": "Big",
+    "value": "5500 - 7500$",
+    "place": "Any",
+    "image_path": "BigEnemyValuableWiki.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 15,
+  "fields": {
+    "name": "Big Surplus Valuable",
+    "size": "Big",
+    "value": "$10001+",
+    "place": "Any",
+    "image_path": "Large_Surplus.webp"
+  }
+},
+{
+  "model": "Info.valuable",
+  "pk": 16,
+  "fields": {
+    "name": "Big Vase",
+    "size": "Big",
+    "value": "5500 - 7500$",
+    "place": "Headman Manor",
+    "image_path": "Big_Vase.webp"
+  }
+}
+]

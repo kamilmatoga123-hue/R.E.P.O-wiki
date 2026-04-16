@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Info
+{% endblock %}
+
+{% block content %}
+    <h1>WYBIERZ KATEGORIE:</h1>
+    <section class="header"></section>
+    <section class="container">
+        <a class="card moby" href="info_moby/">
+            <span>PRZECIWNICY</span>
+        </a>
+
+        <a class="card player" href="info_player/">
+            <span>GRACZ</span>
+            
+        </a>
+
+        <a class="card locations" href="info_locations/">
+            <span>LOKACJE</span>
+            
+        </a>
+
+        <a class="card items" href="info_items/">
+            <span>ITEMY</span>
+            
+        </a>
+
+        <a class="card value" href="info_value/">
+            <span>SPRZEDAWALNE</span>
+           
+        </a>
+
+        <a class="card lore" href="info_lore/">
+           
+            <span>LORE</span>
+        </a>
+
+    </section>
+    <section class=" footer"></section>
+{% endblock %} 

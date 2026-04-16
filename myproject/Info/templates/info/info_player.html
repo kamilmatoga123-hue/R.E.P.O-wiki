@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}Player Info - R.E.P.O. Wiki{% endblock %}
+
+{% block content %}
+<h2>Players</h2>
+<div class="info-container">
+{% for player in players %}
+    <div class="info-card player">
+        <h3>{{ player.name }}</h3>
+        {% if player.image_path %}
+            <img src="/static/img/player/{{ player.image_path }}" alt="{{ player.name }}">
+        {% endif %}
+        <p>{{player.description}}</p>
+    </div>
+    <hr class="separator">
+{% endfor %}
+</div>
+{% endblock %}

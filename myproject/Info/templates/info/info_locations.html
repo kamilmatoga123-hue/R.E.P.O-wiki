@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}Locations - R.E.P.O. Wiki{% endblock %}
+
+{% block content %}
+<h2>Locations</h2>
+<div class="info-container">
+{% for location in locations %}
+    <div class="info-card locations">
+        <h3>Nazwa lokacji:{{ location.name }} </h3>
+        <h3>Typ lokacji:{{ location.location_type}}</h3>
+        {% if location.image_path %}
+            <img src="/static/img/lokacje/{{ location.image_path }}" alt="{{ location.name }}">
+        {% endif %}
+        <hr class="separator">
+        <p>{{ location.description }}</p>
+        <hr class="separator">
+    </div>
+    
+{% endfor %}
+</div>
+{% endblock %}

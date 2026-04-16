@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+<section class="'homehome">
+<h1>O GRZE</h1>
+    <div class="aboutgame-cointainer">
+        R.E.P.O. to kooperacyjna gra typu horror z elementami fizyki, czatem głosowym i przerażającymi potworami. Wraz z maksymalnie 5 innymi graczami wyruszasz w przerażające lokacje, aby wydobywać cenne przedmioty za pomocą narzędzia do chwytania opartego na fizyce!
+        Gra została stworzona przez niezależne szwedzkie studio semiwork na silniku Unity i wydana na platformie Steam 26 lutego 2025 roku. Gra zyskała ogromną popularność w pierwszych dniach po premierze. Rozgrywka przypomina inne gry z gatunku ekstrakcji łupów, takie jak Lethal Company i Content Warning, które charakteryzują się podobną estetyką i balansem rozgrywki.
+        Gra jest obecnie w fazie wczesnego dostępu, ale oferuje już wystarczająco dużo zawartości, aby zapewnić intensywną rozgrywkę (na podstawie tego wywiadu z twórcami, co najmniej 12 miesięcy)!
+        <img src="../static/img/repo home/homerepo.png" class="ing-home">
+    </div>
+</section>
+
+<hr class="separator">
+    <section class="homehome">
+        <h1>GAMEPLAY</h1>
+            <div class="video-wrapper">
+                <video controls poster="../static/img/repo home/screens game/thumbnail.jpg">
+                <source src="../static/vid/gameplay.mp4" type="video/mp4">
+                    Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+                </video>
+            </div>
+    </section>
+
+<hr class="separator">
+    <section class="homehome">
+        <h1>SCREENY Z GRY</h1>
+        <div class="screens-grid-custom">
+            <img src="../static/img/repo home/screens game/zdj1.png" class="ing-home-screens">
+            <img src="../static/img/repo home/screens game/zdj2.png" class="ing-home-screens">
+            <img src="../static/img/repo home/screens game/zdj3.png" class="ing-home-screens">
+            <img src="../static/img/repo home/screens game/zdj4.png" class="ing-home-screens">
+            <img src="../static/img/repo home/screens game/zdj5.png" class="ing-home-screens">
+            <img src="../static/img/repo home/screens game/zdj6.png" class="ing-home-screens">
+        </div>
+    </section>
+
+{% endblock %}

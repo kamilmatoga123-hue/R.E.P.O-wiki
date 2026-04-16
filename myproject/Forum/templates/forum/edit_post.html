@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Post
+{% endblock %}
+
+{% block content %}
+
+<div class="auth-container">
+<h2>Edycja posta</h2>
+
+<form method="POST">
+            {% csrf_token %}
+            <p>
+                <label for="id_title">Tytuł:</label><br />
+                {{ form.title }}
+            </p>
+            <p>
+                <label for="id_content">Treść:</label><br />
+                {{ form.content }}
+            </p>
+            <button type="submit">Edytuj</button>
+        </form>
+
+        <a href="{% url 'forum' %}" style="margin-top:10px; display:inline-block;">Powrót do forum</a>
+</div>
+
+{% endblock %}

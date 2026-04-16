@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Forum
+{% endblock %}
+
+{% block content %}
+
+<h2>Forum</h2>
+
+
+{% if user.is_authenticated %}
+<div class="auth-container">
+    <a class="new-post" href="{% url 'new_post' %}">Nowy Post</a>
+</div>
+{% endif %}
+
+
+{% for post in posts %}
+    <section class="forum-topic">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content }}</p>
+        <small>By {{ post.author.username }} at {{ post.created|date:"d M Y H:i" }}</small>
+
+    
+    {% if user == post.author or user.is_superuser %}
+    <section class="buttons">
+        <form action="{% url 'delete_post' post.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Usuń</button>
+        </form>
+        <form action="{% url 'edit_post' post.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Edytuj</button>
+        </form>
+    </section>
+    {% endif %}
+
+    </section>
+{% empty %}
+    <p>Brak postów.</p>
+{% endfor %}
+
+{% endblock %}

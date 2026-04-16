@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block content %}
+
+<div class="auth-container">
+
+<h2>Register</h2>
+
+<form method="POST">
+
+{% csrf_token %}
+NAZWA UŻYTKOWNIKA:
+<label>{{form.username}}</label>
+EMAIL:
+<label >{{form.email}}</label>
+HASŁO:
+<label >{{form.password1}}</label>
+POWTÓRZ HASŁO:
+<label >{{form.password2}}</label>
+{{form.errors}}
+<button type="submit">
+STWÓRZ PROFIL
+</button>
+
+</form>
+
+<p>
+Masz już konto?
+<a href="/login">Zaloguj się</a>
+
+</p>
+
+</div>
+
+{% endblock %}

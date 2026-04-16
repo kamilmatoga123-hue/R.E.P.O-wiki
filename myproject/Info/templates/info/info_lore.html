@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Game Lore - R.E.P.O. Wiki{% endblock %}
+
+{% block content %}
+<h2>Game Lore</h2>
+<div class="info-container">
+{% for lore in lores %}
+    <div class="info-card lore">
+        <h3>{{ lore.title }}</h3>
+        <p>{{ lore.content }}</p>
+    </div>
+    <hr class="separator">
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}Monsters - R.E.P.O. Wiki{% endblock %}
+
+{% block content %}
+<h2>Monsters</h2>
+<div class="info-container">
+{% for monster in monsters %}
+    <div class="info-card moby">
+        {% if monster.image_path %}
+            <img class="imgmon" src="/static/img/monster/{{ monster.image_path }}" alt="{{ monster.name }}">
+        {% endif %}
+        <h3>{{ monster.name }}</h3>
+        <p>HP: {{ monster.health }}</p>
+        <p>Damage: {{ monster.damage }}</p>
+        <p>Danger level: {{monster.danger}}</p>
+    </div>
+    <hr class="separator">
+{% endfor %}
+</div>
+{% endblock %}

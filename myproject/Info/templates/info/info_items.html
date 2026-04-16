@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}Items - R.E.P.O. Wiki{% endblock %}
+
+{% block content %}
+<h2>Items</h2>
+<div class="info-container">
+{% for item in items %}
+    <div class="info-card items">
+        <h3>{{ item.name }}</h3>
+        {% if item.image_path %}
+            <img src="/static/img/item/{{ item.image_path }}" alt="{{ item.name }}">
+        {% endif %}
+        <p>Type: {{ item.type }}</p>
+        <p>Rarity: {{ item.rarity }}</p>
+        <p>Value: {{ item.value }}</p>
+        {% if item.effect %}
+        <p>Effect: {{ item.effect }}</p>
+        {% endif %}
+    </div>
+    <hr class="separator">
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Nowy Post
+{% endblock %}
+
+{% block content %}
+
+<div class="auth-container">
+<h2>Tworzenie posta</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Dodaj Post</button>
+</form>
+
+<a href="{% url 'forum' %}" style="margin-top:10px; display:inline-block;">Powrót do forum</a>
+</div>
+
+{% endblock %}

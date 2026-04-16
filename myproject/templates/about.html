@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}About - R.E.P.O. WIKI{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <section class="about-header">
+        <h1>PROJEKT: R.E.P.O. ARCHIVE</h1>
+        <p class="subtitle">Baza danych terminala v.2.6.0</p>
+    </section>
+
+    <hr class="divider">
+
+    <section class="about-section">
+        <h2>Cel Projektu</h2>
+        <p>
+            R.E.P.O. WIKI to niezależne repozytorium danych stworzone dla personelu operacyjnego. 
+            Naszym zadaniem jest katalogowanie niebezpiecznych anomalii, takich jak <strong>Mentalist</strong> czy <strong>Oogly</strong>, 
+            oraz dostarczanie kluczowych statystyk (HP, Damage), które decydują o przetrwaniu w terenie.
+        </p>
+    </section>
+
+    <section class="about-section">
+        <h2>Legenda Statystyk</h2>
+        <div class="legend-grid">
+            <div class="legend-item">
+                <span class="label">HP:</span>
+                <p>Wytrzymałość jednostki. Im wyższa, tym więcej zasobów potrzeba do neutralizacji.</p>
+            </div>
+            <div class="legend-item">
+                <span class="label">Damage:</span>
+                <p>Potencjał ofensywny. Wartości powyżej 40 są uważane za krytyczne dla pancerza klasy B.</p>
+            </div>
+            <div class="legend-item">
+                <span class="label">Danger Level:</span>
+                <p>Skala ogólnego zagrożenia (1-3). Poziom 3 oznacza niebezpiecznych przeciwników.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-footer">
+        <p>System stworzony przez: <strong>Kamil Matoga i Mateusz Kowalski</strong></p>
+        <p>Status połączenia: <span class="status-online">ZABEZPIECZONE</span></p>
+    </section>
+</div>
+{% endblock %}

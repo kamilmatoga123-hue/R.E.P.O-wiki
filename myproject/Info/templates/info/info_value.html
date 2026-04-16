@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}Valuables - R.E.P.O. Wiki{% endblock %}
+
+{% block content %}
+<h2>Valuables</h2>
+<div class="info-container">
+{% for valuable in valuables %}
+    <div class="info-card moby">
+        {% if valuable.image_path %}
+            <img class="imgmon" src="/static/img/valuables/{{ valuable.image_path }}" alt="{{ valuable.name }}">
+        {% endif %}
+        <h3>{{ valuable.name }}</h3>
+        <p>Size: {{ valuable.size }}</p>
+        <p>Value: {{ valuable.value }}</p>
+        <p>Found in: {{ valuable.place }}</p>
+    </div>
+    <hr class="separator">
+{% empty %}
+    <p>No valuables found in the database.</p>
+{% endfor %}
+</div>
+{% endblock %}
