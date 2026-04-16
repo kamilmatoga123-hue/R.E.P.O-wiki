@@ -5,36 +5,44 @@ Projekt aplikacji webowej stworzonej w Django, zawierającej bazę wiedzy o grze
 
 
    # Windows:
-w CMD:
 
-KROK 1: Stwórz i aktywuj środowisko wirtualne:
+w CMD:
+KROK 1:wejdz w R.E.P.O-wiki
+
+KROK 2: Stwórz i aktywuj środowisko wirtualne:
    python -m venv venv  albo py -m venv venv
    
-KROK2:aktywuj skrypty
+KROK 3: aktywuj skrypty
    venv\Scripts\activate
 
-KROK 3: Zainstaluj Django:
+KROK 4: Zainstaluj Django:
    pip install django
 
-KROK 4: Zainstaluj requirements.txt:
+KROK 5: Zainstaluj requirements.txt:
    pip install -r requirements.txt
 
-KROK 5: Wejdz do folderu myproject
+KROK 6: Wejdz do folderu myproject
    cd myproject
 
-KROK 6: Uruchom migracje (stwórz strukturę bazy danych):
+KROK 7: Uruchom migracje (stwórz strukturę bazy danych):
    py manage.py migrate
 
-KROK 7: Wczytaj dane startowe (potwory, przedmioty itp.):
+KROK 8: Wczytaj dane startowe (potwory, przedmioty itp.):
    py manage.py loaddata info_data.json
 
-KROK 8: Stwórz konto administratora:
+KROK 9: Stwórz konto administratora:
    py manage.py createsuperuser
 
-KROK 9: Uruchom serwer:
+KROK 10: Uruchom serwer:
    py manage.py runserver
 
 Adres aplikacji: http://127.0.0.1:8000/
+
+# macOS:
+
+Na systemie operacyjnym macOS aktywuje sie skrypty poprzez taka komende:
+
+source venv\Scripts\activate
 
 
 2. ZARZĄDZANIE DANYMI
@@ -44,4 +52,8 @@ Dane z sekcji INFO (monsters, items itp.) są przechowywane w pliku info_data.js
 Aby zaktualizować ten plik po zmianach w panelu admina, użyj komendy:
 
 python -X utf8 manage.py dumpdata info --indent 2 > info_data.json
+
+3. Wyjscie z serwera:
+
+Ctrl + C w konsoli
 
