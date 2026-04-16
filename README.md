@@ -3,6 +3,7 @@ Projekt aplikacji webowej stworzonej w Django, zawierającej bazę wiedzy o grze
 ========================================================================
 1. INSTALACJA I URUCHOMIENIE
 ========================================================================
+w CMD:
 KROK 1: Stwórz i aktywuj środowisko wirtualne:
    python -m venv venv
    # Windows:
@@ -10,18 +11,19 @@ KROK 1: Stwórz i aktywuj środowisko wirtualne:
 
 KROK 2: Zainstaluj Django:
    pip install django
+KROK 3: Zainstaluj requirements.txt:
 
-KROK 3: Uruchom migracje (stwórz strukturę bazy danych):
-   python manage.py migrate
+KROK 4: Uruchom migracje (stwórz strukturę bazy danych):
+   py manage.py migrate
 
-KROK 4: Wczytaj dane startowe (potwory, przedmioty itp.):
-   python manage.py loaddata info_data.json
+KROK 5: Wczytaj dane startowe (potwory, przedmioty itp.):
+   py manage.py loaddata info_data.json
 
-KROK 5: Stwórz konto administratora:
-   python manage.py createsuperuser
+KROK 6: Stwórz konto administratora:
+   py manage.py createsuperuser
 
-KROK 6: Uruchom serwer:
-   python manage.py runserver
+KROK 7: Uruchom serwer:
+   py manage.py runserver
 
 Adres aplikacji: http://127.0.0.1:8000/
 
