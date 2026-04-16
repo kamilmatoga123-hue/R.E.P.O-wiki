@@ -9,7 +9,7 @@ class Item(models.Model):
     ]
     name = models.CharField(max_length=100, default="")
     item_type = models.CharField(max_length=50, choices=ITEM_TYPES, default="tool") # Zmieniłem nazwę z 'type', bo to słowo kluczowe w Pythonie
-    value = models.CharField(default="") # Zmienione na Integer
+    value = models.CharField(default="") 
     effect = models.TextField(null=True, blank=True, default="")
     image_path = models.CharField(max_length=200, null=True, blank=True, default="")
 
@@ -40,9 +40,9 @@ class GameLore(models.Model):
 
 class Monster(models.Model):
     name = models.CharField(max_length=100, default="")
-    health = models.IntegerField(default=0) 
-    damage = models.IntegerField(default=0) 
-    danger = models.IntegerField(default=0)
+    health = models.CharField(default=0) 
+    damage = models.CharField(default=0) 
+    danger = models.CharField(default=0)
     image_path = models.CharField(max_length=200, null=True, blank=True, default="")
 
     def __str__(self):
