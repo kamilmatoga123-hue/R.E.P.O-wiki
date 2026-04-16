@@ -53,7 +53,43 @@ Aby zaktualizować ten plik po zmianach w panelu admina, użyj komendy:
 
 python -X utf8 manage.py dumpdata info --indent 2 > info_data.json
 
+
 3. Wyjscie z serwera:
 
 Ctrl + C w konsoli
+
+
+4.Zastosowane technologie:
+
+Python – główny język programowania projektu.
+
+Django – framework webowy (Back-end) odpowiedzialny za logikę aplikacji, bazę danych i routing.
+
+SQLite3 – lekka, plikowa baza danych (standardowa w Django podczas tworzenia projektu).
+
+HTML5 & CSS3 – do budowy struktury i wyglądu stron (znajdują się w Twoich folderach templates i static).
+
+Pip – menedżer pakietów Pythona, użyty do zarządzania bibliotekami (widoczny w pliku requirements.txt).
+
+venv (Virtual Environment) – narzędzie do izolacji środowiska projektu, zapewniające czystość bibliotek.
+
+Git – system kontroli wersji używany do śledzenia zmian w kodzie.
+
+GitHub – platforma do hostowania repozytorium i współpracy nad kodem.
+
+
+5. Struktura projektu: 
+
+.
+├── .gitignore
+├── requirements.txt
+├── README.md
+└── myproject/
+    ├── manage.py
+    ├── myproject/      # Ustawienia projektu
+    ├── Forum/          # Aplikacja forum
+    ├── Info/           # Aplikacja informacyjna
+    ├── Konta/          # Zarządzanie użytkownikami
+    ├── static/         # CSS, JS, Obrazy
+    └── templates/      # Pliki HTML
 
