@@ -3,10 +3,11 @@ Projekt aplikacji webowej stworzonej w Django, zawierającej bazę wiedzy o grze
 
 1. INSTALACJA I URUCHOMIENIE
 
+
+   # Windows:
 w CMD:
 KROK 1: Stwórz i aktywuj środowisko wirtualne:
    python -m venv venv  albo py -m venv venv
-   # Windows:
    venv\Scripts\activate
 
 KROK 2: Zainstaluj Django:
