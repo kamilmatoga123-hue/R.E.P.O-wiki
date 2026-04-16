@@ -1,7 +1,7 @@
 Projekt aplikacji webowej stworzonej w Django, zawierającej bazę wiedzy o grze oraz forum dla użytkowników.
 
 
-1. INSTALACJA I URUCHOMIENIE
+### 1. INSTALACJA I URUCHOMIENIE
 
 
    # Windows:
@@ -45,7 +45,7 @@ Na systemie operacyjnym macOS aktywuje sie skrypty poprzez taka komende:
 source venv\Scripts\activate
 
 
-2. ZARZĄDZANIE DANYMI
+### 2. ZARZĄDZANIE DANYMI
 
 
 Dane z sekcji INFO (monsters, items itp.) są przechowywane w pliku info_data.json. 
@@ -54,12 +54,12 @@ Aby zaktualizować ten plik po zmianach w panelu admina, użyj komendy:
 python -X utf8 manage.py dumpdata info --indent 2 > info_data.json
 
 
-3. Wyjscie z serwera:
+### 3. Wyjscie z serwera:
 
 Ctrl + C w konsoli
 
 
-4.Zastosowane technologie:
+### 4.Zastosowane technologie:
 
 Python – główny język programowania projektu.
 
@@ -78,8 +78,10 @@ Git – system kontroli wersji używany do śledzenia zmian w kodzie.
 GitHub – platforma do hostowania repozytorium i współpracy nad kodem.
 
 
-5. Struktura projektu: 
+### 5. Struktura projektu: 
 
+
+```text
 .
 ├── .gitignore
 ├── requirements.txt
