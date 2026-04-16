@@ -1,0 +1,52 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Django database
+repo_game.sqlite3
+
+# Migrations cache
+*/migrations/__pycache__/
+
+# Static collected files
+staticfiles/
+
+# Media (uploads)
+media/
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Django logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python build files
+dist/
+build/
+*.egg-info/
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+tmp/
+temp/
+
+# Node (optional frontend)
+node_modules/
