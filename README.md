@@ -6,6 +6,7 @@ Projekt aplikacji webowej stworzonej w Django, zawierającej bazę wiedzy o grze
 
    # Windows:
 w CMD:
+
 KROK 1: Stwórz i aktywuj środowisko wirtualne:
    python -m venv venv  albo py -m venv venv
    
