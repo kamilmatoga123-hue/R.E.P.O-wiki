@@ -6,7 +6,9 @@ Projekt aplikacji webowej stworzonej w Django, zawierającej bazę wiedzy o grze
 KROK 1: Stwórz i aktywuj środowisko wirtualne:
    python -m venv venv
    # Windows:
-   venv\Scripts\activate
+   .venv\Scripts\activate
+   # MacOS:
+   source .venv/bin/activate
 
 KROK 2: Zainstaluj Django:
    pip install django
