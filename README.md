@@ -1,8 +1,8 @@
 Projekt aplikacji webowej stworzonej w Django, zawierającej bazę wiedzy o grze oraz forum dla użytkowników.
 
-========================================================================
+
 1. INSTALACJA I URUCHOMIENIE
-========================================================================
+
 w CMD:
 KROK 1: Stwórz i aktywuj środowisko wirtualne:
    python -m venv venv
@@ -27,9 +27,9 @@ KROK 7: Uruchom serwer:
 
 Adres aplikacji: http://127.0.0.1:8000/
 
-========================================================================
+
 2. ZARZĄDZANIE DANYMI
-========================================================================
+
 
 Dane z sekcji INFO (monsters, items itp.) są przechowywane w pliku info_data.json. 
 Aby zaktualizować ten plik po zmianach w panelu admina, użyj komendy:
